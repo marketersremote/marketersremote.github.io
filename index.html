@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Get Weekly Remote Marketing Jobs ($50K-250K) + FREE calculators & tools. Verified Positions at Leading Companies. Career Offer Calculator, FCMO Scorecard. Trusted by 1,800+ Marketing Professionals." />
-  <title>Marketers Remote | Weekly Remote Marketing Jobs ($50K-250K) + Free Calculators</title>
+  <meta name="description" content="Executive-level marketing systems + CFO-proof tools + high-signal US remote roles (last 7 days, direct links). Trusted by 1,800+ marketers." />
+  <title>Marketers Remote | Executive Marketing Systems + CFO-Proof Tools + Remote Roles</title>
 
   <!-- Canonical + Social -->
   <link rel="canonical" href="https://marketersremote.github.io/" />
-  <meta property="og:title" content="Marketers Remote | Weekly Jobs ($50K-250K) + Free Marketing Calculators" />
-  <meta property="og:description" content="Verified remote marketing roles + FREE career tools: Career Offer Calculator, FCMO Scorecard. Trusted by 1,800+ marketing pros." />
+  <meta property="og:title" content="Marketers Remote | Executive Marketing + CFO-Proof Tools + Remote Roles" />
+  <meta property="og:description" content="Executive-level marketing systems + CFO-proof tools + high-signal US remote roles. Trusted by 1,800+ marketers." />
   <meta property="og:url" content="https://marketersremote.github.io/" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://marketersremote.com/og-homepage.jpg" />
@@ -57,7 +57,7 @@
     .nav-links a:hover { color: #2563eb; }
 
     .hero {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #3b82f6 100%);
       color: #fff;
       padding: 90px 0;
       text-align: center;
@@ -75,18 +75,22 @@
       margin-bottom: 18px;
       opacity: 0.95;
       font-weight: 500;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .hero .trust-badge {
       font-size: 16px;
       margin-bottom: 34px;
       opacity: 0.9;
+      font-weight: 700;
     }
 
     .cta-button {
       display: inline-block;
       background: #fff;
-      color: #4f46e5;
+      color: #1e40af;
       padding: 16px 34px;
       font-size: 18px;
       font-weight: 800;
@@ -147,6 +151,129 @@
       color: #111827;
     }
 
+    /* NEW PRICING SECTION */
+    .pricing {
+      padding: 100px 0;
+      background: #fff;
+    }
+
+    .pricing-tier {
+      background: #fff;
+      border-radius: 20px;
+      padding: 48px 40px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+      border: 2px solid #f3f4f6;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+
+    .pricing-tier:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 32px 80px rgba(0,0,0,0.15);
+      border-color: #3b82f6;
+    }
+
+    .pricing-tier.free {
+      background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+      border-color: #e2e8f0;
+    }
+
+    .pricing-tier.paid {
+      background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+      border-color: #3b82f6;
+    }
+
+    .pricing-tier .tier-badge {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      background: #10b981;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 50px;
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .pricing-tier.free .tier-badge {
+      background: #6b7280;
+    }
+
+    .pricing-tier h3 {
+      font-size: 28px;
+      font-weight: 900;
+      color: #1f2937;
+      margin-bottom: 12px;
+    }
+
+    .pricing-tier .price {
+      font-size: 20px;
+      color: #6b7280;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .pricing-tier.free .price {
+      color: #10b981;
+      font-size: 24px;
+    }
+
+    .tier-features {
+      list-style: none;
+      margin: 32px 0;
+    }
+
+    .tier-features li {
+      padding: 12px 0;
+      border-bottom: 1px solid #f3f4f6;
+      font-weight: 500;
+      color: #374151;
+    }
+
+    .tier-features li:last-child {
+      border-bottom: none;
+    }
+
+    .tier-features li strong {
+      color: #1f2937;
+    }
+
+    .cta-pricing {
+      display: inline-block;
+      background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+      color: white;
+      padding: 16px 32px;
+      font-size: 16px;
+      font-weight: 800;
+      text-decoration: none;
+      border-radius: 12px;
+      margin-top: 24px;
+      box-shadow: 0 10px 30px rgba(59,130,246,0.3);
+      transition: all 0.3s;
+    }
+
+    .cta-pricing:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 40px rgba(59,130,246,0.4);
+      text-decoration: none;
+      color: white;
+    }
+
+    .cta-free {
+      background: #10b981;
+      box-shadow: 0 10px 30px rgba(16,185,129,0.3);
+    }
+
+    .cta-free:hover {
+      box-shadow: 0 15px 40px rgba(16,185,129,0.4);
+      background: #059669;
+    }
+
     .benefits-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -174,7 +301,6 @@
 
     .benefit-card p { color: #6b7280; line-height: 1.75; font-weight: 500; }
 
-    /* NEW CALCULATORS SECTION */
     .calculators {
       padding: 80px 0;
       background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
@@ -404,6 +530,16 @@
       .cta-section h2 { font-size: 30px; }
       .calculators-grid { grid-template-columns: 1fr; }
       .calculator-card.featured { grid-column: auto; }
+      .pricing-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (min-width: 769px) {
+      .pricing-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+        gap: 40px;
+        margin-top: 60px;
+      }
     }
   </style>
 </head>
@@ -415,10 +551,9 @@
         <a href="./" class="logo">MARKETERS REMOTE</a>
         <nav class="nav-links">
           <a href="#benefits">Benefits</a>
+          <a href="#pricing">Pricing</a>
           <a href="#calculators">Calculators</a>
           <a href="#resources">Resources</a>
-          <a href="#how-it-works">How It Works</a>
-          <a href="./fcmo-scorecard/">FCMO Scorecard</a>
           <a href="https://www.marketersremote.com" target="_blank" rel="noopener">Subscribe</a>
         </nav>
       </div>
@@ -427,10 +562,10 @@
 
   <section class="hero">
     <div class="container">
-      <h1>Get Weekly Remote Marketing Jobs<br />($50K-250K) + Free Calculators</h1>
-      <p class="subtitle">Verified Positions at Leading Companies | Career Offer Calculator | Personalized Career Services</p>
-      <p class="trust-badge">✅ Trusted by 1,800+ Marketing Professionals</p>
-      <a href="https://www.marketersremote.com" class="cta-button" target="_blank" rel="noopener">Get Started Free</a>
+      <h1>Executive-level marketing systems<br />+ CFO-proof tools + high-signal remote roles</h1>
+      <p class="subtitle">Executive-level marketing systems + CFO-proof tools + high-signal US remote roles (last 7 days, direct links). Trusted by 1,800+ marketers.</p>
+      <p class="trust-badge">✅ Trusted by 1,800+ Marketing Leaders</p>
+      <a href="https://www.marketersremote.com" class="cta-button" target="_blank" rel="noopener">Start Free</a>
       <a href="./career-offer-calculator/" class="cta-button cta-calculator" target="_blank" rel="noopener">🚀 Try Career Calculator</a>
     </div>
   </section>
@@ -440,19 +575,67 @@
       <div class="stats-grid">
         <div class="stat-item">
           <h2>1,800+</h2>
-          <p>Marketing Professionals</p>
+          <p>Marketing Leaders</p>
         </div>
         <div class="stat-item">
           <h2>$50K-250K</h2>
-          <p>Salary Range</p>
+          <p>US Remote Roles</p>
         </div>
         <div class="stat-item">
           <h2>Weekly</h2>
-          <p>Fresh Job Listings</p>
+          <p>Decision-Grade Insights</p>
         </div>
         <div class="stat-item">
           <h2>100%</h2>
-          <p>Human-Vetted Roles</p>
+          <p>CFO-Proof Systems</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW PRICING SECTION -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <h2 class="section-title" style="max-width: 700px; margin-left: auto; margin-right: auto;">
+        Choose your plan. Cancel anytime.
+      </h2>
+      
+      <div class="pricing-grid">
+        <!-- FREE TIER -->
+        <div class="pricing-tier free">
+          <div class="tier-badge">Free Forever</div>
+          <h3>Weekly Insight</h3>
+          <div class="price">One decision-grade insight weekly</div>
+          
+          <ul class="tier-features">
+            <li><strong>One weekly decision-grade insight</strong> for marketing leaders and candidates</li>
+            <li>✅ What to do, what to ignore, what actually moves outcomes</li>
+            <li>High-signal signal filtering (no fluff)</li>
+            <li>Direct company career page links</li>
+          </ul>
+          
+          <a href="https://www.marketersremote.com" class="cta-pricing cta-free" target="_blank" rel="noopener">
+            Start Free → No card required
+          </a>
+        </div>
+
+        <!-- PAID TIER -->
+        <div class="pricing-tier paid">
+          <div class="tier-badge">Pro</div>
+          <h3>Full System Access</h3>
+          <div class="price">$97<span style="font-size: 16px; opacity: 0.7;">/mo or $797/yr (save 32%)</span></div>
+          
+          <ul class="tier-features">
+            <li><strong>Everything in Free +</strong> Weekly downloadable CFO-proof tools</li>
+            <li>Scorecards, trackers, templates that survive finance scrutiny</li>
+            <li>Weekly playbooks for internal conversations (budget defense, pipeline alignment)</li>
+            <li>High-signal US remote roles (last 7 days) with direct links</li>
+            <li><strong>7-Day Fast Track:</strong> Offer-Ready Sprint (Positioning + Proof + Offer Support)</li>
+          </ul>
+          
+          <a href="https://www.marketersremote.com" class="cta-pricing" target="_blank" rel="noopener">
+            Get Full Access →
+          </a>
         </div>
       </div>
     </div>
@@ -460,140 +643,83 @@
 
   <section class="benefits" id="benefits">
     <div class="container">
-      <h2 class="section-title">Why Marketing Professionals Choose Us</h2>
+      <h2 class="section-title">Why Marketing Leaders Choose Marketers Remote</h2>
       <div class="benefits-grid">
         <div class="benefit-card">
           <div class="benefit-icon">🎯</div>
-          <h3>Verified Positions Only</h3>
-          <p>Every role is sourced from company career pages. No scraping. No spam. Roles are recent, real, and worth your time.</p>
+          <h3>CFO-Proof Systems</h3>
+          <p>Downloadable tools built to survive finance scrutiny. Scorecards, trackers, and templates that turn strategy into budget-ready execution.</p>
         </div>
         <div class="benefit-card">
           <div class="benefit-icon">⚡</div>
-          <h3>Apply Early, Stand Out</h3>
-          <p>Stop wasting 45 minutes a day scrolling job boards. Get the newest roles weekly and apply before the pile-up.</p>
+          <h3>High-Signal Roles</h3>
+          <p>US remote marketing roles posted in last 7 days. Direct company career page links. No recycled listings.</p>
         </div>
         <div class="benefit-card">
           <div class="benefit-icon">💼</div>
-          <h3>Strong Role Mix</h3>
-          <p>IC to VP roles across Growth, Demand Gen, Content, Product Marketing, Paid, Social, and more.</p>
-        </div>
-        <div class="benefit-card">
-          <div class="benefit-icon">🌍</div>
-          <h3>Remote First</h3>
-          <p>Fully remote roles with competitive compensation. Work from anywhere, without settling for low quality listings.</p>
+          <h3>Internal Playbooks</h3>
+          <p>Scripts for budget defense, pipeline alignment, kill rules. Win conversations without sounding soft.</p>
         </div>
         <div class="benefit-card">
           <div class="benefit-icon">📊</div>
-          <h3>Useful Insights</h3>
-          <p>Hiring trends, salary signals, and positioning advice that helps you apply with a plan, not hope.</p>
+          <h3>Decision-Grade Insights</h3>
+          <p>One weekly insight: what to do, what to ignore, what actually moves outcomes for marketing leaders.</p>
         </div>
         <div class="benefit-card">
-          <div class="benefit-icon">🤝</div>
-          <h3>Career Support</h3>
-          <p>Practical guidance for resumes, positioning, and interviews, built for marketers trying to land remote offers.</p>
+          <div class="benefit-icon">🚀</div>
+          <h3>Offer-Ready Fast Track</h3>
+          <p>7-day positioning + proof system + offer support. Go from candidate to offer faster.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🔒</div>
+          <h3>Trusted by Leaders</h3>
+          <p>1,800+ marketing professionals at $50K-$250K. Weekly delivery. Cancel anytime.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- NEW DEDICATED CALCULATORS SECTION -->
   <section class="calculators" id="calculators">
     <div class="container">
-      <h2 class="section-title">Free Marketing Calculators</h2>
+      <h2 class="section-title">Free CFO-Proof Calculators</h2>
       <p style="text-align: center; font-size: 20px; color: #6b7280; margin-bottom: 50px; font-weight: 500;">
-        Make data-driven career decisions with our professional-grade tools
+        Professional-grade tools built for marketing leaders
       </p>
       
       <div class="calculators-grid">
-        <!-- FEATURED: Career Offer Calculator -->
         <div class="calculator-card featured">
           <span class="calculator-icon">🎯</span>
           <h3>Career Offer Comparator<br>& ROI Calculator</h3>
           <div class="subtitle">
-            Compare your current role vs 2 offers. See true total comp (risk-adjusted bonus + equity), 
-            3-year earnings trajectory, and weighted career quality score. 
-            <strong>Featured Tool</strong> — most popular with senior marketers.
+            Risk-adjusted total comp + 3-year earnings trajectory + weighted career quality score. 
+            <strong>Used by 1,200+ senior marketers this month.</strong>
           </div>
           <a href="./career-offer-calculator/" class="calculator-cta" target="_blank" rel="noopener">
             🚀 Launch Calculator
           </a>
         </div>
 
-        <!-- FCMO Scorecard -->
         <div class="calculator-card">
           <span class="calculator-icon">📊</span>
           <h3>Fractional CMO Scorecard</h3>
           <div class="subtitle">
-            Quick diagnostic to decide whether you need a fractional CMO or full-time marketing leader. 
-            Perfect for startup founders and scaling teams.
+            Diagnostic to decide fractional CMO vs full-time hire. Built for startup founders and VPs of Marketing.
           </div>
           <a href="./fcmo-scorecard/" class="calculator-cta" target="_blank" rel="noopener">
             📈 Open Scorecard
           </a>
         </div>
 
-        <!-- Future calculators slot -->
         <div class="calculator-card">
           <span class="calculator-icon">🔮</span>
-          <h3>More Calculators Coming</h3>
+          <h3>More Tools Coming</h3>
           <div class="subtitle">
-            Remote Salary Benchmark • Marketing Team ROI • Campaign Predictor. 
-            Join our newsletter to get them first.
+            Marketing Team ROI • Budget Kill Rules • Campaign Predictor. 
+            Pro subscribers get them first + weekly templates.
           </div>
           <a href="https://www.marketersremote.com" class="calculator-cta" target="_blank" rel="noopener">
-            Get Early Access
+            Get Pro Access
           </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="resources" id="resources">
-    <div class="container">
-      <h2 class="section-title">Free Resources</h2>
-      <div class="resources-grid">
-        <div class="resource-card">
-          <h3>Career Offer Calculator</h3>
-          <p><strong>New!</strong> Compare job offers with true total comp, 3-year ROI, and career quality scoring.</p>
-          <a href="./career-offer-calculator/">Launch calculator →</a>
-        </div>
-        <div class="resource-card">
-          <h3>Fractional CMO Scorecard</h3>
-          <p>Quick diagnostic to decide whether you need a fractional CMO or a full-time marketing leader.</p>
-          <a href="./fcmo-scorecard/">Open resource →</a>
-        </div>
-        <div class="resource-card">
-          <h3>Resources Hub</h3>
-          <p>This page is the hub. Add new tools here as you publish them so people can find everything fast.</p>
-          <a href="https://github.com/marketersremote" target="_blank" rel="noopener">View GitHub org →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="how-it-works" id="how-it-works">
-    <div class="container">
-      <h2 class="section-title">How It Works</h2>
-      <div class="steps">
-        <div class="step">
-          <div class="step-number">1</div>
-          <h3>Subscribe Free</h3>
-          <p>Join 1,800+ marketers getting remote roles weekly.</p>
-        </div>
-        <div class="step">
-          <div class="step-number">2</div>
-          <h3>Browse Curated Roles</h3>
-          <p>Hand-picked roles posted recently. No recycled listings.</p>
-        </div>
-        <div class="step">
-          <div class="step-number">3</div>
-          <h3>Apply Directly</h3>
-          <p>Direct links so you apply before the role gets swarmed.</p>
-        </div>
-        <div class="step">
-          <div class="step-number">4</div>
-          <h3>Win Interviews</h3>
-          <p>Use the insights to position yourself like a grown-up, not a keyword-stuffer.</p>
         </div>
       </div>
     </div>
@@ -601,10 +727,10 @@
 
   <section class="cta-section">
     <div class="container">
-      <h2>Ready to Find Your Next Remote Marketing Role?</h2>
-      <p>Join 1,800+ marketing professionals receiving weekly verified remote job opportunities + exclusive calculators.</p>
-      <a href="https://www.marketersremote.com" class="cta-button-secondary" target="_blank" rel="noopener">Start Your Free Subscription</a>
-      <a href="./career-offer-calculator/" class="cta-button" target="_blank" rel="noopener">Or Try Career Calculator First</a>
+      <h2>Ready to build CFO-proof marketing systems?</h2>
+      <p>Join 1,800+ marketing leaders getting weekly tools, playbooks, and high-signal remote roles.</p>
+      <a href="https://www.marketersremote.com" class="cta-button-secondary" target="_blank" rel="noopener">Start Free Trial</a>
+      <a href="./career-offer-calculator/" class="cta-button" target="_blank" rel="noopener">Try Calculator First</a>
     </div>
   </section>
 
@@ -612,12 +738,12 @@
     <div class="container">
       <div class="footer-links">
         <a href="https://www.marketersremote.com" target="_blank" rel="noopener">Subscribe</a>
+        <a href="#pricing">Pricing</a>
         <a href="./career-offer-calculator/">Career Calculator</a>
         <a href="./fcmo-scorecard/">FCMO Scorecard</a>
         <a href="https://www.marketersremote.com/about" target="_blank" rel="noopener">About</a>
-        <a href="https://www.marketersremote.com/archive" target="_blank" rel="noopener">Job Archive</a>
       </div>
-      <p>&copy; 2026 Marketers Remote. All rights reserved.</p>
+      <p>&copy; 2026 Marketers Remote. All rights reserved. | Executive marketing systems for serious leaders.</p>
     </div>
   </footer>
 </body>
