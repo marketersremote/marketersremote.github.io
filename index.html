@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Get Weekly Remote Marketing Jobs ($50K-250K) and exclusive marketing industry insights. Verified Positions at Leading Companies. Trusted by 1,800+ Marketing Professionals." />
-  <title>Marketers Remote | Weekly Remote Marketing Jobs ($50K-250K)</title>
+  <meta name="description" content="Get Weekly Remote Marketing Jobs ($50K-250K) + FREE calculators & tools. Verified Positions at Leading Companies. Career Offer Calculator, FCMO Scorecard. Trusted by 1,800+ Marketing Professionals." />
+  <title>Marketers Remote | Weekly Remote Marketing Jobs ($50K-250K) + Free Calculators</title>
 
   <!-- Canonical + Social -->
   <link rel="canonical" href="https://marketersremote.github.io/" />
-  <meta property="og:title" content="Marketers Remote | Weekly Remote Marketing Jobs ($50K-250K)" />
-  <meta property="og:description" content="Verified remote marketing roles and industry insights. Trusted by 1,800+ marketing pros." />
+  <meta property="og:title" content="Marketers Remote | Weekly Jobs ($50K-250K) + Free Marketing Calculators" />
+  <meta property="og:description" content="Verified remote marketing roles + FREE career tools: Career Offer Calculator, FCMO Scorecard. Trusted by 1,800+ marketing pros." />
   <meta property="og:url" content="https://marketersremote.github.io/" />
   <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:image" content="https://marketersremote.com/og-homepage.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -93,11 +94,22 @@
       border-radius: 10px;
       transition: transform 0.2s, box-shadow 0.2s;
       box-shadow: 0 4px 20px rgba(0,0,0,0.22);
+      margin: 0 10px;
     }
 
     .cta-button:hover {
       transform: translateY(-2px);
       box-shadow: 0 6px 30px rgba(0,0,0,0.3);
+    }
+
+    .cta-calculator {
+      background: linear-gradient(135deg, #f59e0b, #fbbf24);
+      color: #1f2937;
+    }
+
+    .cta-calculator:hover {
+      color: #1f2937;
+      box-shadow: 0 6px 30px rgba(245,158,11,0.4);
     }
 
     .stats {
@@ -161,6 +173,97 @@
     }
 
     .benefit-card p { color: #6b7280; line-height: 1.75; font-weight: 500; }
+
+    /* NEW CALCULATORS SECTION */
+    .calculators {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    }
+
+    .calculators-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .calculator-card {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+      border: 3px solid transparent;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .calculator-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: linear-gradient(90deg, #3b82f6, #f59e0b, #10b981);
+    }
+
+    .calculator-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+      border-color: #f59e0b;
+    }
+
+    .calculator-card.featured {
+      grid-column: 1 / -1;
+      background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+      border-color: #f59e0b;
+    }
+
+    .calculator-card.featured::before {
+      background: linear-gradient(90deg, #f59e0b, #ef4444, #10b981);
+      height: 8px;
+    }
+
+    .calculator-icon {
+      font-size: 64px;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .calculator-card h3 {
+      font-size: 28px;
+      font-weight: 900;
+      margin-bottom: 15px;
+      color: #1f2937;
+    }
+
+    .calculator-card .subtitle {
+      font-size: 16px;
+      color: #6b7280;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    .calculator-cta {
+      display: inline-block;
+      background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+      color: white;
+      padding: 16px 32px;
+      font-size: 16px;
+      font-weight: 800;
+      text-decoration: none;
+      border-radius: 12px;
+      transition: all 0.3s;
+      box-shadow: 0 10px 25px rgba(59,130,246,0.3);
+    }
+
+    .calculator-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 35px rgba(59,130,246,0.4);
+      text-decoration: none;
+      color: white;
+    }
 
     .resources {
       padding: 80px 0;
@@ -266,6 +369,7 @@
       border-radius: 10px;
       transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
       box-shadow: 0 4px 20px rgba(0,0,0,0.22);
+      margin: 0 10px;
     }
 
     .cta-button-secondary:hover {
@@ -298,6 +402,8 @@
       .section-title { font-size: 26px; }
       .nav-links { display: none; }
       .cta-section h2 { font-size: 30px; }
+      .calculators-grid { grid-template-columns: 1fr; }
+      .calculator-card.featured { grid-column: auto; }
     }
   </style>
 </head>
@@ -309,6 +415,7 @@
         <a href="./" class="logo">MARKETERS REMOTE</a>
         <nav class="nav-links">
           <a href="#benefits">Benefits</a>
+          <a href="#calculators">Calculators</a>
           <a href="#resources">Resources</a>
           <a href="#how-it-works">How It Works</a>
           <a href="./fcmo-scorecard/">FCMO Scorecard</a>
@@ -320,10 +427,11 @@
 
   <section class="hero">
     <div class="container">
-      <h1>Get Weekly Remote Marketing Jobs<br />($50K-250K)</h1>
-      <p class="subtitle">Verified Positions at Leading Companies | Personalized Career Services</p>
+      <h1>Get Weekly Remote Marketing Jobs<br />($50K-250K) + Free Calculators</h1>
+      <p class="subtitle">Verified Positions at Leading Companies | Career Offer Calculator | Personalized Career Services</p>
       <p class="trust-badge">✅ Trusted by 1,800+ Marketing Professionals</p>
       <a href="https://www.marketersremote.com" class="cta-button" target="_blank" rel="noopener">Get Started Free</a>
+      <a href="./career-offer-calculator/" class="cta-button cta-calculator" target="_blank" rel="noopener">🚀 Try Career Calculator</a>
     </div>
   </section>
 
@@ -388,10 +496,67 @@
     </div>
   </section>
 
+  <!-- NEW DEDICATED CALCULATORS SECTION -->
+  <section class="calculators" id="calculators">
+    <div class="container">
+      <h2 class="section-title">Free Marketing Calculators</h2>
+      <p style="text-align: center; font-size: 20px; color: #6b7280; margin-bottom: 50px; font-weight: 500;">
+        Make data-driven career decisions with our professional-grade tools
+      </p>
+      
+      <div class="calculators-grid">
+        <!-- FEATURED: Career Offer Calculator -->
+        <div class="calculator-card featured">
+          <span class="calculator-icon">🎯</span>
+          <h3>Career Offer Comparator<br>& ROI Calculator</h3>
+          <div class="subtitle">
+            Compare your current role vs 2 offers. See true total comp (risk-adjusted bonus + equity), 
+            3-year earnings trajectory, and weighted career quality score. 
+            <strong>Featured Tool</strong> — most popular with senior marketers.
+          </div>
+          <a href="./career-offer-calculator/" class="calculator-cta" target="_blank" rel="noopener">
+            🚀 Launch Calculator
+          </a>
+        </div>
+
+        <!-- FCMO Scorecard -->
+        <div class="calculator-card">
+          <span class="calculator-icon">📊</span>
+          <h3>Fractional CMO Scorecard</h3>
+          <div class="subtitle">
+            Quick diagnostic to decide whether you need a fractional CMO or full-time marketing leader. 
+            Perfect for startup founders and scaling teams.
+          </div>
+          <a href="./fcmo-scorecard/" class="calculator-cta" target="_blank" rel="noopener">
+            📈 Open Scorecard
+          </a>
+        </div>
+
+        <!-- Future calculators slot -->
+        <div class="calculator-card">
+          <span class="calculator-icon">🔮</span>
+          <h3>More Calculators Coming</h3>
+          <div class="subtitle">
+            Remote Salary Benchmark • Marketing Team ROI • Campaign Predictor. 
+            Join our newsletter to get them first.
+          </div>
+          <a href="https://www.marketersremote.com" class="calculator-cta" target="_blank" rel="noopener">
+            Get Early Access
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="resources" id="resources">
     <div class="container">
       <h2 class="section-title">Free Resources</h2>
       <div class="resources-grid">
+        <div class="resource-card">
+          <h3>Career Offer Calculator</h3>
+          <p><strong>New!</strong> Compare job offers with true total comp, 3-year ROI, and career quality scoring.</p>
+          <a href="./career-offer-calculator/">Launch calculator →</a>
+        </div>
         <div class="resource-card">
           <h3>Fractional CMO Scorecard</h3>
           <p>Quick diagnostic to decide whether you need a fractional CMO or a full-time marketing leader.</p>
@@ -437,8 +602,9 @@
   <section class="cta-section">
     <div class="container">
       <h2>Ready to Find Your Next Remote Marketing Role?</h2>
-      <p>Join 1,800+ marketing professionals receiving weekly verified remote job opportunities.</p>
+      <p>Join 1,800+ marketing professionals receiving weekly verified remote job opportunities + exclusive calculators.</p>
       <a href="https://www.marketersremote.com" class="cta-button-secondary" target="_blank" rel="noopener">Start Your Free Subscription</a>
+      <a href="./career-offer-calculator/" class="cta-button" target="_blank" rel="noopener">Or Try Career Calculator First</a>
     </div>
   </section>
 
@@ -446,6 +612,7 @@
     <div class="container">
       <div class="footer-links">
         <a href="https://www.marketersremote.com" target="_blank" rel="noopener">Subscribe</a>
+        <a href="./career-offer-calculator/">Career Calculator</a>
         <a href="./fcmo-scorecard/">FCMO Scorecard</a>
         <a href="https://www.marketersremote.com/about" target="_blank" rel="noopener">About</a>
         <a href="https://www.marketersremote.com/archive" target="_blank" rel="noopener">Job Archive</a>
