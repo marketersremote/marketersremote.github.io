@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
 
+# Core pages
+Allow: /$
+Allow: /sitemap.xml
+Allow: /fcmo-scorecard/
+Allow: /career-offer-calculator/
+
 Sitemap: https://marketersremote.github.io/sitemap.xml
